@@ -1,0 +1,17 @@
+{% include "header.html" %}
+<!-- CODE INSPIRATION: https://levelup.gitconnected.com/reading-and-analyzing-image-file-data-and-colors-with-python-from-matrices-to-web-applications-d18010f8966f -->
+<h1 class="center-heading pad-40">Color Palette</h1>
+<hr>
+<div class="center-div">
+    <form action="/success" method="post" enctype="multipart/form-data">
+        <h2 class="pad-10">Choose an image.</h2>
+        <p class="f-20">A color palette will be generated from the image.</p>
+        <div class="container">
+            <input type="file" class="upload-box" id="file" name="file">
+        </div>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+</div>
+
+{% include "footer.html" %}
